@@ -4,7 +4,14 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      rotate:{
+        '31.61': '31.61deg',
+      },
+      backgroundImage: {
+        'messageBox':"url(./Assets/message.png)"
+      }
+    },
   },
   plugins: [],
 }

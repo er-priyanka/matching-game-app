@@ -3,11 +3,15 @@ import monkey from "../Assets/monkey.png";
 import settingIcon from "../Assets/Cog.png";
 import starIcon from "../Assets/Star.png";
 // import messageBox from "../Assets/message.png";
+import banana from "../Assets/banana.png";
+import BackButton from '../Components/BackButton';
 
-const Home = () => {
+const IntroOne = () => {
   return (
     <div className='flex gap-5 justify-between m-auto pt-12'>
-        <div className='flex gap-5 pr-10 pl-10 justify-center items-end w-[30%] ' >
+        <div className='flex gap-5 pr-10 pl-10 justify-center items-end w-[30%] relative ' >
+            <BackButton/>
+
             {/* buttons */}
             <div className='
             w-[40%] 
@@ -50,9 +54,10 @@ const Home = () => {
         '>
             {/* monkey and message */}
             <div className='
-            flex
+            flex-column 
             justify-center
             items-center
+            text-left          
             bg-messageBox
             bg-[length:100%_100%]
             bg-no-repeat
@@ -61,8 +66,21 @@ const Home = () => {
             h-[25vh]
             mt-2 
             ml-auto mr-40 
-            mb-[-40px]'>
-                <h1 className='font-[Nunito] font-black text-3xl text-[#11AEC6]'>Welcome Kiddo !</h1>
+            mb-[-40px]
+            py-[30px]
+            px-[55px]
+            '>  
+           
+                <h1 className=' font-[Nunito] font-black text-3xl text-[#11AEC6]'>Hi, I am Mizo ! </h1>
+                
+                <div className='flex justify-left items-center'>
+                    <h1 className='font-[Nunito] font-black text-3xl text-[#11AEC6]'>and I love Bananas </h1>
+
+                    <img className='w-[44px] h-[55px] rotate-[-20deg]' src={banana} alt="banana" />
+                
+                </div>
+            
+                
             </div>
             {/* <img className='w-[40%] h-[150px] ml-auto mr-40 mb-[-30px]' src={messageBox} alt='message' /> */}
             <img className='w-[45%] m-auto mr-[40%]' src={monkey} alt="Monkey" />
@@ -74,7 +92,7 @@ const Home = () => {
                     <div className='bg-[#EDB900] rounded-[30px] py-2 pr-3 pl-1'>
                         <div className='bg-[#FED33B] rounded-[30px] px-2 pl-0'>
                             <div className='bg-white w-7 h-3 text-right rounded-[100%] rotate-[-31.61deg]'></div>
-                            <button className='text-5xl px-4  font-[Nunito] font-black text-white  '>START</button>
+                            <button className='text-5xl px-4  font-[Nunito] font-black text-white  '>NEXT</button>
                             <div className='bg-white w-3 h-2 ml-auto text-right rounded-[100%] rotate-[-31deg]'></div>
                         </div>
                         
@@ -94,13 +112,10 @@ const Home = () => {
             </div>
             
             </div>
-        {/* <div className='w-1/4 border-2'>
-            <button>START</button>
-            start button 
-        </div> */}
+       
         
     </div>
   )
 }
 
-export default Home;
+export default IntroOne;
