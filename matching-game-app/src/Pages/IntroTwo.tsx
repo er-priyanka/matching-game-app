@@ -19,7 +19,6 @@ const IntroTwo = () => {
             flex-col
             items-center
             justify-center
-            
             ' >
                 <div className='bg-white w-7 h-3 text-right ml-auto mb-4 rounded-[100%] -rotate-[-31.61deg]'></div>
                 <div>
@@ -62,21 +61,19 @@ const IntroTwo = () => {
             bg-[length:100%_100%]
             bg-no-repeat
             bg-center
-            w-[50%]
+            w-[40%]
             h-[25vh]
             mt-2 
-            ml-auto mr-40 
+            ml-auto mr-60 
             mb-[-40px]
             py-[30px]
             px-[55px]
             '>  
            
-                <h1 className=' font-[Nunito] font-black text-3xl text-[#11AEC6]'>Hi, I am Mizo ! </h1>
+                <h1 className='w-[80%] font-[Nunito] font-black text-3xl text-[#11AEC6]'>Can you help me get some ? 🤔 </h1>
                 
                 <div className='flex justify-left items-center'>
-                    <h1 className='font-[Nunito] font-black text-3xl text-[#11AEC6]'>and I love Bananas </h1>
 
-                    <img className='w-[44px] h-[55px] rotate-[-20deg]' src={banana} alt="banana" />
                 
                 </div>
             
@@ -92,7 +89,7 @@ const IntroTwo = () => {
                     <div className='bg-[#EDB900] rounded-[30px] py-2 pr-3 pl-1'>
                         <div className='bg-[#FED33B] rounded-[30px] px-2 pl-0'>
                             <div className='bg-white w-7 h-3 text-right rounded-[100%] rotate-[-31.61deg]'></div>
-                            <button className='text-5xl px-4  font-[Nunito] font-black text-white  '>NEXT</button>
+                            <button className='text-5xl px-4  font-[Nunito] font-black text-white  '>YES</button>
                             <div className='bg-white w-3 h-2 ml-auto text-right rounded-[100%] rotate-[-31deg]'></div>
                         </div>
                         
