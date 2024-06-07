@@ -7,7 +7,7 @@ import starIcon from "../Assets/Star.png";
 const Home = () => {
   return (
     <div className='flex gap-5 justify-between m-auto pt-12'>
-        <div className='flex gap-5 pr-10 pl-10 justify-center items-end w-[30%] ' >
+        <div className='flex gap-5 pr-10 pl-10 justify-center items-end w-[30%] min-h-[80vh] ' >
             {/* buttons */}
             <div className='
             w-[40%] 
@@ -19,7 +19,7 @@ const Home = () => {
             ' >
                 <div className='bg-white w-7 h-3 text-right ml-auto mb-4 rounded-[100%] -rotate-[-31.61deg]'></div>
                 <div>
-                    <img className='h-[50%] w-[50%] m-auto' src={settingIcon} alt="setting button" />
+                    <img className='h-[50%] w-[50%] m-auto ' src={settingIcon} alt="setting button" />
                 </div>
                 <div className='bg-white w-3 h-2 text-right rounded-[100%] rotate-[20deg]'></div>
             </div>
@@ -34,7 +34,7 @@ const Home = () => {
             ' >
                 <div className='bg-white w-7 h-3 text-right ml-auto mb-4 rounded-[100%] -rotate-[-31.61deg]'></div>
                 <div>
-                    <img className='h-[50%] w-[50%] m-auto' src={starIcon} alt="start button" />
+                    <img className='h-[50%] w-[50%] m-auto' src={starIcon} alt="star button" />
                 </div>
                 <div className='bg-white w-3 h-2 text-right rounded-[100%] rotate-[20deg]'></div>
             </div>
@@ -47,6 +47,7 @@ const Home = () => {
         flex-column
         items-left
         relative
+
         '>
             {/* monkey and message */}
             <div className='
@@ -65,7 +66,15 @@ const Home = () => {
                 <h1 className='font-[Nunito] font-black text-3xl text-[#11AEC6]'>Welcome Kiddo !</h1>
             </div>
             {/* <img className='w-[40%] h-[150px] ml-auto mr-40 mb-[-30px]' src={messageBox} alt='message' /> */}
-            <img className='w-[45%] m-auto mr-[40%]' src={monkey} alt="Monkey" />
+            <img className='
+            absolute 
+            top-[18%] 
+            w-[45%] 
+             
+             
+            hover:top-[10%]
+            ' 
+            src={monkey} alt="Monkey" />
             
             {/* button */}
 

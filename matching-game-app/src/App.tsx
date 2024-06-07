@@ -4,6 +4,7 @@ import Home from './Pages/Home';
 import IntroOne from './Pages/IntroOne';
 import IntroTwo from './Pages/IntroTwo';
 import Instructions from './Pages/Instructions';
+import Activity from './Pages/Activity';
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
      {/* <Home/> */}
      {/* <IntroOne /> */}
      {/* <IntroTwo /> */}
-     <Instructions />
+     {/* <Instructions /> */}
+     <Activity />
     </div>
   );
 }
