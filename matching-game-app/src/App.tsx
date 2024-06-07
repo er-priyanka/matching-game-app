@@ -3,6 +3,7 @@ import './App.css';
 import Home from './Pages/Home';
 import IntroOne from './Pages/IntroOne';
 import IntroTwo from './Pages/IntroTwo';
+import Instructions from './Pages/Instructions';
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
      
      {/* <Home/> */}
      {/* <IntroOne /> */}
-     <IntroTwo />
+     {/* <IntroTwo /> */}
+     <Instructions />
     </div>
   );
 }
