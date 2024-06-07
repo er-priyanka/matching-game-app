@@ -8,7 +8,7 @@ import BackButton from '../Components/BackButton';
 
 const IntroOne = () => {
   return (
-    <div className='flex gap-5 justify-between m-auto pt-12'>
+    <div className='flex gap-5 justify-between m-auto py-12'>
         <div className='flex gap-5 pr-10 pl-10 justify-center items-end w-[30%] relative ' >
             <BackButton/>
 
