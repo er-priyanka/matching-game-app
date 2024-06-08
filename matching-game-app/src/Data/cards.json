@@ -1,0 +1,19 @@
+{
+    "leftCards" : [
+        {"id":1, "image":"leftOrange", "name": "orange", "matched": false},
+        {"id":2, "image":"leftApple", "name": "apple", "matched": false},
+        {"id":3, "image":"leftApple", "name": "apple", "matched": false},
+        {"id":4, "image":"leftOrange", "name": "orange", "matched": false},
+        {"id":5, "image":"leftOrange", "name": "orange", "matched": false},
+        {"id":6, "image":"leftApple", "name": "apple", "matched": false}
+    ],
+    "rightCards" : [
+        {"id":1, "image":"rightOrange", "name": "orange", "matched": false},
+        {"id":2, "image":"rightOrange", "name": "orange", "matched": false},
+        {"id":3, "image":"rightApple", "name": "apple", "matched": false},
+        {"id":4, "image":"rightApple", "name": "apple", "matched": false},
+        {"id":5, "image":"rightOrange", "name": "orange", "matched": false},
+        {"id":6, "image":"rightApple", "name": "apple", "matched": false}
+
+    ]
+}

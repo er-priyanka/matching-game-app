@@ -7,18 +7,21 @@ import blueHeartCard from "../Assets/blueHeart.png";
 import heartGroup from "../Assets/heartGroup.png";
 import polygon from "../Assets/Polygon 1.png";
 import rectangle from "../Assets/Rectangle 159.png";
+import { ScreenProps } from '../App';
 
-const Instructions = () => {
+const Instructions:React.FC<ScreenProps> = ({handleBackButton, handleNextScreen}) => {
     const [progress, setProgress] = useState<number>(10);
   return (
     <div>
 
         {/* back button */}
-        <div className='w-90% 
+        <div
+        
+         className='w-90% 
         py-[50px]
         min-h-[100vh]
         m-auto border relative'>
-           <div className='
+        <div onClick={handleBackButton} className='
         box-border
         border-[12px]
         rounded-[25%]
@@ -183,12 +186,12 @@ const Instructions = () => {
             </div>
         
         {/* Play button */}
-            <div className='absolute bottom-10 right-[10%] flex justify-center items-center '>
+            <div onClick={handleNextScreen} className='absolute bottom-10 right-[10%] flex justify-center items-center '>
                     <div className=' bg-[#FFDF6D] rounded-[30px] pt-1 pb-3 px-2 inline-block'>
                         <div className='bg-[#EDB900] rounded-[30px] py-2 pr-3 pl-1'>
                             <div className='bg-[#FED33B] rounded-[30px] px-2 pl-0'>
                                 <div className='bg-white w-7 h-3 text-right rounded-[100%] rotate-[-31.61deg]'></div>
-                                <button className='text-5xl px-4  font-[Nunito] font-black text-white'>PLAY</button>
+                                <button  className='text-5xl px-4  font-[Nunito] font-black text-white'>PLAY</button>
                                 {/* <div className='bg-white w-3 h-2 ml-auto text-right rounded-[100%] rotate-[-31deg]'></div> */}
                             </div>
                             

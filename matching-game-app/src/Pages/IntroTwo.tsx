@@ -6,14 +6,15 @@ import starIcon from "../Assets/Star.png";
 import banana from "../Assets/banana.png";
 import BackButton from '../Components/BackButton';
 import ProgressBar from '../Components/ProgressBar';
+import { ScreenProps } from '../App';
 
-const IntroTwo: React.FC = () => {
+const IntroTwo: React.FC<ScreenProps> = ({handleBackButton, handleNextScreen}) => {
     const [progress, setProgress] = useState<number>(20);
 
   return (
     <div className='flex gap-5 justify-between m-auto py-12'>
         <div className='flex gap-5 pr-10 pl-10 justify-center items-end w-[30%] relative ' >
-            <BackButton/>
+            <BackButton handleBackButton={handleBackButton}/>
 
             {/* buttons */}
             <div className='
@@ -91,7 +92,7 @@ const IntroTwo: React.FC = () => {
             
             {/* button */}
 
-            <div className='absolute bottom-0 right-[15%] flex justify-center items-center '>
+            <div onClick={handleNextScreen} className='absolute bottom-0 right-[15%] flex justify-center items-center '>
                 <div className=' bg-[#FFDF6D] rounded-[30px] pt-1 pb-3 px-2 inline-block'>
                     <div className='bg-[#EDB900] rounded-[30px] py-2 pr-3 pl-1'>
                         <div className='bg-[#FED33B] rounded-[30px] px-2 pl-0'>

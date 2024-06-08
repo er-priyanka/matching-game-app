@@ -2,9 +2,10 @@ import React from 'react';
 import monkey from "../Assets/monkey.png";
 import settingIcon from "../Assets/Cog.png";
 import starIcon from "../Assets/Star.png";
+import { ScreenProps } from '../App';
 // import messageBox from "../Assets/message.png";
 
-const Home = () => {
+const Home: React.FC<ScreenProps> = ({handleBackButton, handleNextScreen}) => {
   return (
     <div className='flex gap-5 justify-between m-auto pt-12'>
         <div className='flex gap-5 pr-10 pl-10 justify-center items-end w-[30%] min-h-[80vh] ' >
@@ -83,7 +84,7 @@ const Home = () => {
                     <div className='bg-[#EDB900] rounded-[30px] py-2 pr-3 pl-1'>
                         <div className='bg-[#FED33B] rounded-[30px] px-2 pl-0'>
                             <div className='bg-white w-7 h-3 text-right rounded-[100%] rotate-[-31.61deg]'></div>
-                            <button className='text-5xl px-4  font-[Nunito] font-black text-white  '>START</button>
+                            <button onClick={handleNextScreen} className='text-5xl px-4  font-[Nunito] font-black text-white  '>START</button>
                             <div className='bg-white w-3 h-2 ml-auto text-right rounded-[100%] rotate-[-31deg]'></div>
                         </div>
                         

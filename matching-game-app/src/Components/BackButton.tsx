@@ -2,9 +2,14 @@ import React from 'react'
 import polygon from "../Assets/Polygon 1.png";
 import rectangle from "../Assets/Rectangle 159.png";
 
-const BackButton = () => {
+interface ScreenProps {
+  handleBackButton: () => void;
+}
+const BackButton:React.FC<ScreenProps> = ({handleBackButton}) => {
   return (
-    <div className='
+    <div 
+    onClick={handleBackButton}
+    className='
         box-border
         border-[12px]
         rounded-[25%]
